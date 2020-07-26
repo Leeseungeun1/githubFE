@@ -60,3 +60,42 @@
   .input--text::-ms-input-placeholder{color:#cacaca;}  /* ie */
   .input--text::-moz-input-placeholder{color:#cacaca;} /* safari */
   
+  /* HEADER */
+  header{
+      border-bottom: 1px solid rgba(0,0,0,.75);
+      box-shadow: 0 0 5px rgba(0,0,0,.75);
+      background: #fff;
+  }
+  header .inner{
+      max-width: 980px;
+      height: 78px;
+      /* 중앙 정렬(left, right: auto (auto를 사용하기 위해서는 width가 정의되어야 있어야 한다.)) */
+      margin: 0 auto; 
+  }
+  header .menu-group{
+      display: flex;
+      height: 100%;
+      align-items: center;
+  }
+  header .logo{
+      margin-right: 10px;
+  }
+  header .logo a{
+      background: url("../img/logo.svg");
+      width: 32px;
+      height: 32px;
+      display: block;
+      /* 명시적으로 text를 사라지겠다는 의미 */
+      text-indent: -9999px;
+  }
+  header .logo a:hover{
+      background: url("../img/logo_on.svg");
+  }
+  header .main-menu{
+      display: flex;
+  }
+  header .main-menu li a{
+      display: block;
+      padding: 10px;
+      color: #3c4146;
+  }

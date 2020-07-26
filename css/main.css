@@ -9,6 +9,20 @@ a {
     /* text에 줄을 넣는 속성 */
     text-decoration: none;
 }
+
+/* FLOAT CLEARFIX*/
+.clearfix::after{
+    content:"";
+    clear:both;
+    display:block;
+}
+.float--left{
+    float:left;
+}
+.float--right{
+    float:right;
+}
+
 /* BTN */
 .btn{
     height: 34px;
@@ -103,6 +117,9 @@ a {
       padding: 10px;
       color: #3c4146;
   }
-header .main-menu li a:hover{
-    color: #4078c0;
-}
+  header .main-menu li a:hover{
+      color: #4078c0;
+  }
+  header .sign-group{
+      display: flex;
+  }

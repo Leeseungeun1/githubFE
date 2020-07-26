@@ -55,8 +55,7 @@
                 0 0 5px rgba(81, 167, 232, .5);
   }
   /* Vendor Prefix (브라우저 업체별 접두사) */
-  /* input-placeholder는 제공되는 기능은 아니지만, vendor prefix를 이용하여
-  특정 브라우저에서 기능을 사용할 수 있다.*/
+  /* input-placeholder는 제공되는 기능은 아니지만, vendor prefix를 이용하여 특정 브라우저에서 기능을 사용할 수 있다.*/
   .input--text::-webkit-input-placeholder{color:#cacaca;}  /* chrome */
   .input--text::-ms-input-placeholder{color:#cacaca;}  /* ie */
   .input--text::-moz-input-placeholder{color:#cacaca;} /* safari */

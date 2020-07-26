@@ -10,6 +10,35 @@ a {
     text-decoration: none;
 }
 
+/* SUMMARY */
+.summary{
+
+}
+.summary__title{
+    font-size: 38px;
+    font-weight: 100;
+    line-height: 1.25;
+    margin-bottom: 18px;
+}
+.summary__description{
+    font-size: 26px;
+    font-weight: 300px;
+    color: #767676;
+    line-height: 1.5;
+}
+
+/* SECTION & INNER */
+.section{
+    position: relative;
+}
+.section .inner{
+    max-width: 1080px;
+    /* 중앙 정렬(left, right: auto (auto를 사용하기 위해서는 width가 정의되어야 있어야 한다.)) */
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
 /* FLOAT CLEARFIX*/
 .clearfix::after{
     content:"";
@@ -85,10 +114,7 @@ header{
     background: #fff;
 }
 header .inner{
-    max-width: 1080px;
     height: 78px;
-    /* 중앙 정렬(left, right: auto (auto를 사용하기 위해서는 width가 정의되어야 있어야 한다.)) */
-    margin: 0 auto; 
 }
 header .menu-group{
     display: flex;
@@ -155,4 +181,37 @@ header .sub-menu li a{
 }
 header .sub-menu li a:hover{
     color: #4078c0;
+}
+
+/* VISUAL */
+.section--visual{
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    /* 브라우저의 크기에 상관 없이 이미지가 덮히도록 설정 */
+    background-size: cover;
+}
+.section--visual::before{
+    content: "";
+    position: absolute;
+    /* absolute에 0 0 0 0으로 설정해주면, 부모 전체를 덮는 효과와 같다. */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,.3);
+}
+.section--visual .inner{
+    padding: 160px 0;
+}
+.section--visual .summary__title{
+    color: #ffffff;
+    font-size: 54px;
+    text-shadow: 0 1px 1px rgba(0,0,0,.25),
+                 0 1px 25px rgba(0,0,0,.75);
+}
+.section--visual .summary__description{
+    color: #ffffff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.25),
+                 0 1px 25px rgba(0,0,0,.75);
 }

@@ -34,10 +34,32 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <ul>
-        <li>123</li>
-        <li>456</li>
-        <li>789</li>
-    </ul>
+<!-- BEM(CSS의 작명규칙)
+    __: ~의 일부분이다.
+    --:  ~의 상태
+    - : 일반적인 이름/작명 (띄어쓰기를 쓰는 경우) 
+-->
+<div class="body__container">
+
+    <!-- HEADER -->
+    <header class="section">
+        <div class="inner">
+          
+            <div class="menu-group">
+                <div class="logo">  <!-- #: 미정인 사이트 주소를 의미함. -->
+                    <a href="#">GitHub</a>
+                </div>
+                <ul class="main-menu">
+                    <li><a href="#">Personal</a></li>
+                    <li><a href="#">Open source</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Explore</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+</div>
 </body>
 </html>
